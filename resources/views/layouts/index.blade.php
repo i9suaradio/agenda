@@ -87,7 +87,9 @@
        }
        </style>
 </head>
-<body>
-  @yield('content')
+<body class="text-center form_login">
+    <div id='app' class="form-signin w-100 m-auto">
+        @yield('content')
+    </div>
 </body>
 </html>
