@@ -13,13 +13,7 @@ return new class extends Migration
     {
         Schema::create('clientes', function (Blueprint $table) {
             $table->id();
-            $table->string('Nome', 255)->nullable();
-            $table->string('Endereco', 255)->nullable();
-            $table->string('Telefone', 15)->nullable();
-            $table->text('Observacao')->nullable();
-            $table->tinyInteger('DiaBanho')->nullable(); // 0-6 representando os dias da semana
-            $table->unsignedBigInteger('ordemtaxidog')->nullable();
-            $table->boolean('ativo')->default(true);
+            $table->timestamps();
         });
     }
 

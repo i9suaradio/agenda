@@ -11,17 +11,17 @@ Route::get('/dashboard', function () {
 });
 
 Route::get('/clientes', function () {
-    return view('clientes');
+    return view('dashboard');
 });
 
 Route::get('/cliente', function () {
-    return view('cliente');
+    return view('dashboard');
 });
 
 Route::get('/agenda', function () {
-    return view('agenda');
+    return view('dashboard');
 });
 
 Route::get('/agendadodia', function () {
-    return view('agendadodia');
+    return view('dashboard');
 });
